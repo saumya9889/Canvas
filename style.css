@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #18c89c57;
+}
+
+.container {
+  width: 70%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px #094e3d;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1.gradient-text {
+  text-align: center;
+  width: 100%;
+  font-size: 2em;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  color: #000000e8;
+  background: linear-gradient(204deg, #00bf8f 30%, #001510 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border: 2px solid #00bf8f;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.editable-area {
+  padding: 10px;
+  font-size: 18px;
+  cursor: move;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid #00bf8f;
+}
+
+.toolbar {
+  margin-top: 20px;
+}
+
+.toolbar button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #00bf8f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.toolbar button:hover {
+  background-color: #007f5f;
+  transform: scale(1.01);
+}
+
+.toolbars {
+  margin-top: 20px;
+  padding-left: 4.6rem;
+}
+
+.toolbars button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #00bf8f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 15px;
+  margin-left: 250px;
+  align-items: start;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.toolbars button:hover {
+  background-color: #007f5f;
+  transform: scale(1.01);
+}
+
+.font-style {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.font-style label {
+  margin-right: 10px;
+}
+
+.font-style input[type="range"],
+.font-style input[type="number"],
+.font-style input[type="color"] {
+  margin-right: 15px;
+}
+
+.font-style button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #00bf8f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.font-style button:hover {
+  background-color: #007f5f;
+  transform: scale(1.01);
+}
+
+#inputText {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #00bf8f;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}

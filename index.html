@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="gradient-text">Celebrare Canvas</h1>
+        </header>
+        <div class="toolbars">
+            <button onclick="undo()">Undo</button>
+            <button onclick="redo()">Redo</button>
+        </div>
+
+        <!-- Editable Area-->
+        <div class="box">
+            <div id="editableArea" contenteditable="true" class="editable-area" onmousedown="dragStart(event)">
+            </div>
+        </div>
+
+
+        <!-- Input field -->
+        <input type="text" id="inputText" placeholder="Enter text to add" />
+    </div>
+    <div >
+        <div class="toolbar">
+        <button onclick="addText()">Add Text</button>
+    </div>
+    </div>
+         <!-- For Font Controls & Styling  -->
+         <div class="font-style">
+            <label for="fontSize">Font Size: </label>
+            <input type="range" id="fontSize" min="10" max="72" value="18" onchange="changeFontSize(this.value)">
+            <input type="number" id="fontSizeNumber" min="10" max="72" value="18" oninput="changeFontSize(this.value)">
+
+            <label for="fontColor">Font Color: </label>
+            <input type="color" id="fontColor" value="#000000" onchange="changeFontColor(this.value)">
+            
+            <button id="bold" onclick="toggleBold()">Bold</button>
+            <button id="italic" onclick="toggleItalic()">Italic</button>
+            <button id="underline" onclick="toggleUnderline()">Underline</button>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
