@@ -85,6 +85,15 @@ h1.gradient-text {
   padding-left: 4.6rem;
 }
 
+@media (max-width: 768px) {
+  .toolbars {
+    display: flex;
+    padding: 0;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .toolbars button {
   padding: 10px;
   font-size: 16px;
@@ -97,6 +106,12 @@ h1.gradient-text {
   margin-left: 250px;
   align-items: start;
   transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .toolbars button {
+    margin-left: 153px;
+  }
 }
 
 .toolbars button:hover {
